@@ -1,0 +1,145 @@
+@import "reset.css";
+
+.hidden {
+  display: none;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+body img {
+  height: inherit;
+  width: inherit;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+main {
+  display: flex;
+  height: inherit;
+  width: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#weather {
+  font-size: 1.1em;
+  font-weight: 400;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#clock {
+  color: white;
+  font-size: 150px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#login-form {
+  margin-bottom: 10px;
+}
+
+#login-form input:first-child {
+  border-style: none;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0px 10px;
+  width: 180px;
+  height: 30px;
+}
+
+#login-form input:first-child::placeholder {
+  color: white;
+  font-size: 1.5em;
+}
+
+#greeting {
+  font-size: 1.7em;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+#todo-form input {
+  border-style: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0px 10px;
+  width: 270px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+#todo-form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5em;
+}
+
+#todo-form input:focus {
+  border-color: white;
+  transition: border-color 0.3s ease-in-out;
+  cursor: pointer;
+  border-color: rgba(255, 255, 255, 0);
+}
+
+#todo-list {
+  height: 90px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#todo-list::-webkit-scrollbar {
+  display: none;
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0px;
+}
+
+#todo-list li span {
+  font-size: 15px;
+  margin-right: 8px;
+  font-weight: 500;
+}
+
+#todo-list li button {
+  color: whitesmoke;
+  background: rgba(255, 255, 255, 0);
+  border-style: none;
+  font-weight: 800;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 13px;
+}
+
+#quote span:first-child {
+  margin-bottom: 5px;
+  font-size: small;
+}
+
+#quote span:last-child {
+  font-size: xx-small;
+}
